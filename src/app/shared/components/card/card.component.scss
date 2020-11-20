@@ -1,0 +1,12 @@
+@import '../../../../scss/base.scss';
+
+.example-card {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+} 
+
+.mat-card {
+    border-radius: 30px;
+    background-color: $color__gvsu_white;
+}

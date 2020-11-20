@@ -1,0 +1,85 @@
+<header>
+    <div class="header-container">
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <img src="assets/accessibility_logo.png">
+                <div class="header-text">Accessibility</div>
+                <span class="example-spacer"></span>
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="navigateMenu('history')">
+                        <mat-icon><span class="material-icons">history</span></mat-icon>
+                        <span>History</span>
+                    </button>
+
+                    <mat-divider></mat-divider>
+
+                    <button mat-menu-item (click)="navigateMenu('resources')">
+                        <mat-icon><span class="material-icons">menu_book</span></mat-icon>
+                        <span>Resources</span>
+                    </button>
+
+                    <mat-divider *ngIf="isLoggedIn"></mat-divider>
+
+                    <button mat-menu-item [matMenuTriggerFor]="lessons" *ngIf="isLoggedIn">
+                        <mat-icon><span class="material-icons">school</span></mat-icon>
+                        <span>Lessons</span>
+                    </button>
+
+                </mat-menu>
+
+                <mat-menu #lessons="matMenu">
+                    <button mat-menu-item (click)="navigateMenu('lesson/0')">
+                        <mat-icon *ngIf="lesson0 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson0 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>ARIA</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/1')">
+                        <mat-icon *ngIf="lesson1 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson1 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Contrast</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/2')">
+                        <mat-icon *ngIf="lesson2 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson2 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Color Usage</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/3')">
+                        <mat-icon *ngIf="lesson3 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson3 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Interactive Elements</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/4')">
+                        <mat-icon *ngIf="lesson4 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson4 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Navigation</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/5')">
+                        <mat-icon *ngIf="lesson5 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson5 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>User Feedback</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/6')">
+                        <mat-icon *ngIf="lesson6 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson6 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Spacing</span>
+                    </button>
+                    <mat-divider></mat-divider>
+                    <button mat-menu-item (click)="navigateMenu('lesson/7')">
+                        <mat-icon *ngIf="lesson7 == true"><span class="material-icons">check_circle</span></mat-icon>
+                        <mat-icon *ngIf="lesson7 == false"><span class="material-icons">check_circle_outline</span></mat-icon>
+                        <span>Image and Media</span>
+                    </button>
+                </mat-menu>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+</header>

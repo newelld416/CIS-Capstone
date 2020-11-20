@@ -1,0 +1,33 @@
+@import '../../../scss/base';
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: $header__height;
+    z-index: 100;
+    color: $color__gvsu_black;
+
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+
+    .header-text {
+        margin-left: 10px;
+    }
+}
+
+.mat-toolbar-row {
+    background-color: $color__gvsu_light_grey;
+    color: $color__gvsu_black;
+}
+
+.mat-menu {
+    z-index: 1000;
+}
+  
+.mat-menu-item {
+    color: $color__gvsu_black;
+}

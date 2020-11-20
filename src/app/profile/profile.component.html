@@ -1,0 +1,77 @@
+<app-page-header text="profile"></app-page-header>
+
+<div class="profile-container">
+    <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-icon>account_circle</mat-icon>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <mat-label>First name</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Last name</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-action-row>
+            <button mat-button color="warn" (click)="reset()">Reset</button>
+            <button mat-button color="primary" (click)="submit()">Submit</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-icon>school</mat-icon>
+            <mat-panel-title>
+              Education
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <mat-label>University</mat-label>
+            <input matInput>
+          </mat-form-field>
+      
+          <mat-action-row>
+            <button mat-button color="warn" (click)="reset()">Reset</button>
+            <button mat-button color="primary" (click)="submit()">Submit</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-icon>security</mat-icon>
+              <mat-panel-title>
+                Security
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+        
+            <mat-form-field>
+              <mat-label>Username</mat-label>
+              <input matInput>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput>
+              </mat-form-field>
+        
+              <mat-action-row>
+                <button mat-button color="warn" (click)="reset()">Reset</button>
+                <button mat-button color="primary" (click)="submit()">Submit</button>
+              </mat-action-row>
+          </mat-expansion-panel>
+      </mat-accordion>
+</div>

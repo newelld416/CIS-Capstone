@@ -1,0 +1,9 @@
+<app-page-header text="Resources"></app-page-header>
+
+<div class="content" fxLayout="row wrap">
+    <div *ngFor="let resource of resources">
+        <div class="card-container">
+            <app-card [title]="resource.title" [link]="resource.link" [description]="resource.description"></app-card>
+        </div>
+    </div>
+</div>

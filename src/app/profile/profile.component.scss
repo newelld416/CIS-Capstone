@@ -1,0 +1,14 @@
+@import '../../scss/base.scss';
+
+.profile-container {
+    width: 100%;
+    padding: 25px;
+
+    .mat-expansion-panel {
+        background: $color__gvsu_white;
+        .mat-form-field {
+            margin-left: 8px;
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+{
+    "info": {
+        "id": 1,
+        "title": "Contrast",
+        "example": "https://stackblitz.com/edit/contrast"
+    },
+    "lesson": {
+        "reading": {
+            "subTitle": "This is my subTitle (Contrast)"
+        },
+        "example": {
+            "content": "Example content (Contrast)"
+        },
+        "quiz": {
+            "subTitle": "Quiz",
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "What is the standard contrast ratio recomended?",
+                    "answer": "4.5:1",
+                    "options": [
+                        "4:1",
+                        "4.5:1",
+                        "1:1",
+                        "7:1"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "question": "If my text has a font size of 24pt, what does my contrast ratio need to be.",
+                    "answer": "3:1",
+                    "options": [
+                        "4.5:1",
+                        "3.5:1",
+                        "3:1",
+                        "4:1"
+                    ]
+                }
+            ]
+
+        },
+        "certificate": {
+            "courseTitle": "Contrast"
+        }
+
+    }
+}

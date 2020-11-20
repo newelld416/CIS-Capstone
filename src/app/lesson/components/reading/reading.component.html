@@ -1,0 +1,425 @@
+<div class="reading-container">
+    <div *ngIf="id == 0">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                The acronym ARIA stands for accessible rich internet applications, and it is set of html attributes that
+                developers can use to give their users a more accessible experience. It supplements HTML so that
+                interactions and widgets commonly used in applications can be passed to assistive technologies when
+                there is not otherwise a mechanism. For example, ARIA enables accessible navigation landmarks in HTML4,
+                JavaScript widgets, form hints and error messages, live content updates, and more.
+            </p>
+            <p>
+                To highlight an example of what aria elements can do for you application we have chosen to show the HTML
+                markup for a progress bar. As you can see the element we have chosen is just a div element. By itself it
+                is not able to tell a screen reader what the purpose of the element is and i most certainly can not tell
+                any specific details about the element. So we have added our attribute on the element. The first element
+                we have added is the <strong>role</strong> attribute. This atribute is used to define the overal purpose
+                of the element. the next element is <strong>aria-valuenow</strong> and is used to show the current
+                progress of the loading bar. The third and fourt key attributes are <strong>aria-valuemin</strong> and
+                <strong>aria-valuemax</strong> and they are used to show the min and max values of the progress bar
+                respectively. All of these elements are key examples of how we as developers can add key infomation to
+                elements to help with accessibility needs.
+            </p>
+
+
+            <pre><div class="incorrect">Incorrect</div>&#x3C;div id=&#x22;percent-loaded&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
+
+            <pre><div class="correct">Correct</div>&#x3C;div id=&#x22;percent-loaded&#x22; role=&#x22;progressbar&#x22; aria-valuenow=&#x22;75&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
+
+            <p>
+                For a more complete and live example please click on the "Live Example" button in the bottom left of
+                your
+                screen.
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                There are five key rules to keep in mind when it come to aria attributes.
+            </p>
+            <ol>
+                <li>Use native elements where you can use them</li>
+                <li>Do not change native semantics, unless you really have to</li>
+                <li>All interactive ARIA controls must be usable with the keyboard</li>
+                <li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element</li>
+                <li>All interactive elements must have an accessible name</li>
+            </ol>
+            <h4>Use native elements where you can use them</h4>
+            <p>
+                Essentially this rule is saying that if at all possible you should use native HTML elements when
+                possible. Meaning that it is always possible to style a div element to whatever you want however if you
+                want it to be a button you should be using the native HTML button element instead of making something
+                else look like a button. This will save you lots of time as well as make your code more readable and
+                maintainable.
+            </p>
+            <h4>Do not change native semantics, unless you really have to</h4>
+            <p>
+                This means when we have native elements like header elements we should leave those elements alone. Those
+                elements often have default roles that are read by screen readers. If you must add a unique role to a
+                native element like that you should add it in a wrapping tag like the example below.
+            </p>
+            <pre><div class="incorrect">Incorrect</div>&#x3C;h2 role=tab&#x3E;heading tab&#x3C;/h2&#x3E;</pre>
+            <pre><div class="correct">Correct</div>&#x3C;div role=tab&#x3E;&#x3C;h2&#x3E;heading tab&#x3C;/h2&#x3E;&#x3C;/div&#x3E;</pre>
+            <h4>All interactive ARIA controls must be usable with the keyboard</h4>
+            <p>
+                Efectively this rule states that if you give an HTML element a specifc role it should act like that
+                role. For example, if using role=button the element must be able to receive focus and a user must be
+                able to activate the action associated with the element using both the enter (on WIN OS) or return (MAC
+                OS) and the space key.
+            </p>
+            <h4>Do not use role="presentation" or aria-hidden="true" on a visible focusable element</h4>
+            <p>
+                A general rule of thumb for showing and hiding elements is arai labels that describe that are not
+                needed.
+                When we dynamically show and hide elements the elements are added automatically. So explicitly defining
+                them in the markup is not necesary.
+            </p>
+            <h4>All interactive elements must have an accessible name</h4>
+            <p>
+                There are certain elements we need to link through html attributes. The most common example of this is
+                input forms. When we have an input element we often acompany that input box with a label. Now there are
+                several ways that we can do that but as long as they are created as separate elements we need to link
+                them. Below you can see two examples that are both syntatically correct however as you can see in the
+                second example the two HTML elements are linked.
+            </p>
+            <pre><div class="incorrect">Incorrect</div>&#x3C;label&#x3E;user name&#x3C;/label&#x3E; &#x3C;input type=&#x22;text&#x22;&#x3E;</pre>
+            <pre><div class="correct">Correct</div>&#x3C;label for=&#x22;uname&#x22;&#x3E;user name&#x3C;/label&#x3E; &#x3C;input type=&#x22;text&#x22; id=&#x22;uname&#x22;&#x3E;</pre>
+        </div>
+        <div class="reading-container__resources">
+            <h3>Resources</h3>
+            <p>There are many valueable resources that can help you with ARIA attributes, below are just a few.</p>
+            <ul>
+                <li><strong><a class="link" href="https://www.w3.org/TR/aria-in-html/">W3 Documentation</a></strong>
+                </li>
+                <li><strong><a class="link"
+                            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">Mozilla
+                            Documentation</a></strong></li>
+                <li><strong><a class="link"
+                            href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria">Google
+                            Documentation</a></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="id == 1">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Contrast is defined as the state of being strikingly different from something else in juxtaposition or
+                close association. Which means that in order to have good contrast we need to have different colors
+                placed close to each other when designing and developing our applications. This is important for a wide
+                variety of impairments such as color blindness, visual deficiencies and even screens with poor color
+                resolution.
+            </p>
+            <p>
+                The overall goal as with most accessibility examples we will talk about in this
+                lesson is to provide a clear experience visually for your application.
+            </p>
+            <p>
+                There are many types
+                of users that benefit from an experience that follows this contrast requirement. Among them being
+                individuals with low vision, individuals with low contrast vision or individuals with color vision
+                deficiency.
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                The standard contrast ratio is 4.5:1, meaning if the background is a solid color (or all black or all
+                white) then the relative luminance of the text can be maintained by making sure that each of the text
+                letters have 4.5:1 contrast ratio with the background. Now let’s break down what that means. If I have
+                an all-black (#000000) background that means the text on that background needs to be at least 4.5 times
+                brighter.
+            </p>
+            <p>
+                Also included in this standard is Images. If the text of an image is meant to convey a message or meant
+                to be understood as text, then it must meet the same accessibility standard of 4.5: 1. A good example of
+                this is a company showing its logo as a jpg file in the header. The logo is meant to be subscribed as
+                text and should therefore follow the contrast accessibility guideline of 4.5:1. An exception to this
+                rule would be if a website had an image of a neighborhood landscape and in that landscape was the
+                address of a house in the background. This is text on your webpage, however since it is not meant to
+                convey a meaningful message to the user you do not have to worry about meeting accessibility guidelines.
+            </p>
+            <p>
+                As developers and designers there are things, we can do to help mitigate contrast issues. Larger text
+                has
+                wider character strokes and can be much easier for the user to read at a lower contrast ratio. So, in
+                examples where colors cannot be changed for a specific reason the design can implement a view with
+                larger text to help alleviate the concern. With larger text (18 point or larger, or 14 point or larger
+                and bold) you could use a contrast ration of 3:1 that would be acceptable for most accessibility
+                guidelines. As always with these guidelines there are not many had and fast rules and we as implementors
+                can be creative about how solve problems for our users. We just have to be cognizant of all of our users
+                when we consider how we may solve a problem.
+            </p>
+        </div>
+        <div class="reading-container__resources">
+            <h3>Resources</h3>
+            <p>There are many valueable resources that can help you with contrast requirements, below are just a few.
+            </p>
+            <ul>
+                <li><strong><a class="link" href="https://contrastchecker.com/">Contrast Checker</a></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="id == 2">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Color usage is extremely important when it comes to accessibility. It can be used to differentiate
+                boundaries as well as convey messages. But as with every accessible feature the goal is to ensure that
+                all users can access whatever information is being conveyed by the color choices.
+            </p>
+            <p>
+                When we think about color we often think about supporting people who experience “Color Blindness” but
+                there are many other type of individuals that need to be considered, like the following:
+            </p>
+            <ul>
+                <li>Users with partial sight often experience limited color vision</li>
+                <li> Some older users may not be able to see color well</li>
+                <li>Users who have color-blindness benefit when information conveyed by color is available in other
+                    visual ways</li>
+                <li>People using text-only, limited color, or monochrome displays may be unable to access
+                    color-dependent information</li>
+                <li>Users who have problems distinguishing between colors can look or listen for text cues</li>
+                <li>People using Braille displays or other tactile interfaces can detect text cues by touch</li>
+            </ul>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                Below I will detail out several examples and reasons for why we must think about these things as we are
+                designing and developing our web solutions. For a more complete exampe please refere to the "Live
+                Example"
+                button in the lower left hand portion of your screen.
+            </p>
+            <h5>Ensure information displayed by color is also displayed by text</h5>
+            <p>
+                An example of this would be using required language surrounding an input with an asterisk as several
+                other indicators instead of just outlining the input with red color to signify a required field.
+            </p>
+            <pre>
+&#x3C;form action=&#x22;/action_page.php&#x22;&#x3E;
+    &#x3C;label style=&#x22;color: red;&#x22; for=&#x22;username&#x22;&#x3E;*Username:&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;text&#x22; id=&#x22;username&#x22; name=&#x22;username&#x22; required&#x3E;
+&#x3C;/form&#x3E;
+            </pre>
+
+            <form action="/action_page.php">
+                <label style="color: red;" for="username">*Username:</label>
+                <input type="text" id="username" name="username" required>
+            </form>
+
+            <h5>Using cues besides color to differentiate assets</h5>
+            <p>
+                An example of this would be how we uses different cursors to signify different capabilities. In the
+                example below you can see that all of the buttons look the exact same color wise, with the exception of
+                the disabled button. However you can tell what the button is intended for with the extr context the
+                cusor offers.
+            </p>
+            <pre>
+&#x3C;button style=&#x22;cursor: default;&#x22;&#x3E;default&#x3C;/button&#x3E;
+&#x3C;button style=&#x22;cursor: -webkit-grab; cursor: grab;&#x22;&#x3E;grab&#x3C;/button&#x3E;
+&#x3C;button style=&#x22;cursor: move;&#x22;&#x3E;move&#x3C;/button&#x3E;
+&#x3C;button style=&#x22;cursor: no-drop;&#x22;&#x3E;no-drop&#x3C;/button&#x3E;
+            </pre>
+            <button class="btn btn__default">default</button>
+            <button class="btn btn__grab">grab</button>
+            <button class="btn btn__move">move</button>
+            <button class="btn btn__no-drop">no-drop</button>
+        </div>
+    </div>
+    <div *ngIf="id == 3">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                The most important feature when it comes to interactive elements is to make them easily identifiable.
+                You need to make sure that whatever disability your user is working with they understand that a button
+                is a button, and a link is a link, and a form element is a form element. Now there are an infinite
+                number of ways to accomplish this and there are new designs coming out daily that make it easier and
+                easier for a user to identify these elements. In this lesson we will talk about some of the common
+                failures we see across many sites and some of the easiest ways to drive a consistent and easily
+                recognizable experience.
+            </p>
+            <p>
+                Here is a list of some common interactive elements that we see often can cause accessibility issues
+            </p>
+            <ul>
+                <li>Using &#x3C;div&#x3E; elements that act like &#x3C;button&#x3E; elements</li>
+                <li>Using input fields without an attached label</li>
+                <li>Using only one method to provide user feedbak</li>
+                <li>Using mouse interactions solely to convey focus</li>
+            </ul>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                The first failure that we talked about was using generic HTML elements to accomplish a task that can be
+                solved more easily with native HTML elements. The classic example that comes up is using elements like
+                &#x3C;a&#x3E; and &#x3C;span&#x3E; to accomplish what is needed by a button element. This inherently
+                causes isses for tools like screen readers that are relient on these native elements to understand the
+                purpose of the element. There are always things you can do to make them act hte same way however you are
+                always going to ad more work that is unnecesssary to the orginal goal of the element. Below you can see
+                a list of things you would need to consider if using an &#x3C;a&#x3E; element to act as a button.
+            </p>
+
+            <ul>
+                <li>&#x3C;button&#x3E; has a button role, &#x3C;a href&#x3E; has a link role</li>
+                <li>&#x3C;a href=&#x201D;#&#x201D; role=&#x201D;button&#x201D;&#x3E; only works with click and enter
+                    key, &#x3C;button&#x3E; works with spacebar also</li>
+                <li>Focus jumps to top of page when user activates an &#x3C;a href=&#x201D;#&#x201D;&#x3E; control
+                    whereas focus stays put on a &#x3C;button&#x3E;</li>
+                <li>&#x3C;button&#x3E; looks like a Button, &#x3C;a href&#x3E; looks like a Link</li>
+                <li>If you forget the href attribute, i.e. &#x3C;a onclick&#x3E; then there is NO role, NO keyboard
+                    focusability, and NO enter key activation. &#x3C;a&#x3E; is basically the same as a &#x3C;span&#x3E;
+                    unless you have the href attribute</li>
+            </ul>
+
+            <p>
+                The second failure that we spoke about was one that we have already covered in our lesson about ARIA
+                elements but we will show the example again as a refresher.
+            </p>
+
+            <pre><div class="incorrect">Incorrect</div>&#x3C;label&#x3E;user name&#x3C;/label&#x3E; &#x3C;input type=&#x22;text&#x22;&#x3E;</pre>
+            <pre><div class="correct">Correct</div>&#x3C;label for=&#x22;uname&#x22;&#x3E;user name&#x3C;/label&#x3E; &#x3C;input type=&#x22;text&#x22; id=&#x22;uname&#x22;&#x3E;</pre>
+
+            <p>
+                Another very simple mistake we make when it comes to interactive elements is making sure we consicer
+                users who are unable or unwilling to use a mouse. The key area we miss is the difference we miss between
+                hover and focus. Hover is inacted when a users mouse hovers overa specific element. It allows us to
+                change the visualization of that element often times showing that it is clickable or that the user can
+                take action against it. What we miss as developers is when a user is not using a mouse, we also need to
+                take into account that the same visualization que is taken when the element obtains focus. This is done
+                through the user using non mouse capabilities to navigate your expereience. For example when a user tabs
+                through a form how do we show the users which element is in focus in the same manner that we would if
+                the hovered of those elements. As an example below you cann see how both CSS selectors are used to
+                describe
+                the styling.
+            </p>
+
+            <pre>
+&#x61;&#x3A;&#x66;&#x6F;&#x63;&#x75;&#x73;&#x2C;&#x20;&#x61;&#x3A;&#x68;&#x6F;&#x76;&#x65;&#x72;&#x20;&#x7B;&#xA;&#x20;&#x20;&#x63;&#x6F;&#x6C;&#x6F;&#x72;&#x3A;&#x20;&#x77;&#x68;&#x69;&#x74;&#x65;&#x3B;&#xA;&#x20;&#x20;&#x62;&#x61;&#x63;&#x6B;&#x67;&#x72;&#x6F;&#x75;&#x6E;&#x64;&#x2D;&#x63;&#x6F;&#x6C;&#x6F;&#x72;&#x3A;&#x20;&#x62;&#x6C;&#x61;&#x63;&#x6B;&#x3B;&#xA;&#x20;&#x20;&#x74;&#x65;&#x78;&#x74;&#x2D;&#x64;&#x65;&#x63;&#x6F;&#x72;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x3A;&#x20;&#x6E;&#x6F;&#x6E;&#x65;&#xA;&#x7D;
+            </pre>
+        </div>
+    </div>
+    <div *ngIf="id == 4">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Navigation is one of the most imperative elements when it comes to creating an accessible site.
+                Navigation elements are the mainf capability that allow users to traverse and navigate your expereience.
+                Even users without accessibility needs have experienced how difficult it is to navigate a web experience
+                if you can't understand how to move around. It can be off putting and frustrating and can be cause for
+                users to jsut abandone your experience all together. Navigation is also something that can change
+                drastically between different screen sizes. Often time how you navigate a desktop expereience can be
+                very different then how you navigate a tablet experience and how you navigate a tablet expereience can
+                often be very different then how you navigate a mobile experience. Below I have used Amway web
+                expereiencesto show you three examples of the same site in different screen sizes to show yo uhow
+                different navigation experiences.
+            </p>
+            <h4>Desktop</h4>
+            <img class="nav-img-example" src="assets/desktop_nav.png">
+            <h4>Tablet</h4>
+            <img class="nav-img-example" src="assets/tablet_nav.png">
+            <h4>Mobile</h4>
+            <img class="nav-img-example" src="assets/mobile_nav.png">
+            <p>
+                All of these images support the same information architecture and must provide similar expereinces to
+                their customers, however they all are designed very differently.
+            </p>
+            <p>
+
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                To support best practices around navigation there are some key elements we need to consider, structure
+                and styling. Structure referes to the semantic markup that conveys the menu structure to users. Menus
+                coded semantically can easily adapt to different situations, such as small screen displays, screen
+                magnification, and other assistive technology. While Style is the act of making something look the way a
+                user expects it to look.
+            </p>
+            <h4>Structure</h4>
+            <p>
+                It is important to use key native elements when developing the structure of you navigation cability.
+                This wil ensure that your navigation elements work well under multiple conditions as well as work well
+                with assistive technologies such as screen readers. As you can see in the example below there are native
+                navigation elements like the &#x3C;nav&#x3E; tag and the use of the role attribute. As well as the use
+                of several ARIA attributes for assistive technologies. For a more complete example please click on the
+                "Live Example" button in the lower left hand part of your screen.
+            </p>
+
+            <pre>
+&#x3C;nav aria-label=&#x22;Accessible University&#x22;&#x3E;
+&#x9;&#x3C;ul id=&#x22;menubar1&#x22; role=&#x22;menubar&#x22; aria-label=&#x22;Accessible University&#x22;&#x3E;
+&#x9;&#x9;&#x3C;li role=&#x22;none&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;a role=&#x22;menuitem&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22; href=&#x22;#&#x22; tabindex=&#x22;0&#x22;&#x3E;Home&#x3C;/a&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x9;&#x3C;li role=&#x22;none&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;a role=&#x22;menuitem&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22; href=&#x22;#&#x22; tabindex=&#x22;0&#x22;&#x3E;About=&#x3C;/a&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x9;&#x3C;li role=&#x22;none&#x22;&#x3E;
+&#x9;&#x9;&#x9;&#x3C;a role=&#x22;menuitem&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22; href=&#x22;#&#x22; tabindex=&#x22;0&#x22;&#x3E;=History&#x3C;/a&#x3E;
+&#x9;&#x9;&#x3C;/li&#x3E;
+&#x9;&#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+            </pre>
+            <h4>Styling</h4>
+            <p>
+                When it comes to styling your navigation components there are elements in which you can be createive but
+                it is important to keep in mind that users expect to see thing in a logical manner. For examle when a
+                user is browsing websites on their desktop they expect the navigation to clearly be called out at the
+                top of the page. When a user is on a mobile device a user is familiar with a haburger menu that expands
+                to a flyout menu filled with accordions that facilitate sub menus. The familiar interactions are hugely
+                beneficial for everyday users but the become critical when users a expereienceing accessibility
+                difficulties.
+            </p>
+            <p>
+                The more common we can make our experiences and stadardized we construst our application the easier it
+                can be for all individuals to navigate the web as a whole.
+            </p>
+        </div>
+    </div>
+    <div *ngIf="id == 5">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Background Content
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                Standards Content
+            </p>
+        </div>
+    </div>
+    <div *ngIf="id == 6">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Background Content
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                Standards Content
+            </p>
+        </div>
+    </div>
+    <div *ngIf="id == 7">
+        <div class="reading-container__background">
+            <h3>Background</h3>
+            <p>
+                Background Content
+            </p>
+        </div>
+        <div class="reading-container__standards">
+            <h3>Standards</h3>
+            <p>
+                Standards Content
+            </p>
+        </div>
+    </div>
+</div>

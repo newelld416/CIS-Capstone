@@ -1,0 +1,17 @@
+@import '../../../scss/base.scss';
+
+.page-main {
+    position: fixed;
+    top: 75px;
+    border-radius: 50px;
+    background: $color__gvsu_light_blue;
+    height: 85%;
+    left: 5%;
+    width: 90%;
+    padding: 10px;
+
+    @include md {
+        left: 5%;
+        width: 90%;
+    }
+}

@@ -1,0 +1,163 @@
+@import './variables';
+
+@mixin over_lg {
+  @media (min-width: $breakpoint__lg_l) {
+    @content;
+  }
+}
+
+@mixin lg_l {
+  @media (max-width: $breakpoint__lg_l) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $breakpoint__lg) {
+    @content;
+  }
+}
+
+@mixin md_l {
+  @media (max-width: $breakpoint__md_l) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $breakpoint__md) {
+    @content;
+  }
+}
+
+@mixin md_s {
+  @media (max-width: $breakpoint__md_s) {
+    @content;
+  }
+}
+
+@mixin sm_l {
+  @media (max-width: $breakpoint__sm_l) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $breakpoint__sm) {
+    @content;
+  }
+}
+
+@mixin arrow_framed_pointing_up($dimension: 14px, $boder-color: $color__grey,  $color: $color__gvsu_white) {
+  bottom: 100%;
+  left: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+
+  border-color: $boder-color;
+  border-bottom-color: $color;
+  border-width: $dimension;
+  margin-left: -$dimension;
+}
+
+@mixin triangle($dimension: 14px, $color: $color__gvsu_white, $direction: 'up') {
+  $hSide: $dimension solid transparent;
+  $vSide: $dimension solid $color;
+
+  width: 0;
+  height: 0;
+  border-left: $hSide;
+  border-right: $hSide;
+
+  @if $direction == 'down' {
+    border-top: $vSide; // down
+  } @else {
+    border-bottom: $vSide; // up
+  }
+
+}
+
+@mixin dimension($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin round_borders($top-left, $top-right, $bottom-right, $bottom-left ) {
+  @if $top-left {
+    border-top-left-radius: $top-left;
+  }
+
+  @if $top-right {
+    border-top-right-radius: $top-right;
+  }
+
+  @if $bottom-right {
+    border-bottom-right-radius: $bottom-right;
+  }
+
+  @if $bottom-left {
+    border-bottom-left-radius: $bottom-left;
+  }
+}
+
+@mixin tooltip_side_options($triangle_color, $extra_indent: 0) {
+  &-top {
+    transform: translateY(-$extra_indent);
+
+    &:after {
+      border-color: $triangle_color transparent transparent transparent;
+    }
+  }
+
+  &-right {
+    transform: translateX($extra_indent);
+
+    &:after {
+      border-color: transparent $triangle_color transparent transparent;
+    }
+  }
+
+  &-bottom {
+    transform: translateY($extra_indent);
+
+    &:after {
+      border-color: transparent transparent $triangle_color transparent;
+    }
+  }
+
+  &-left {
+    transform: translateX(-$extra_indent);
+
+    &:after {
+      border-color: transparent transparent transparent $triangle_color;
+    }
+  }
+}
+
+@mixin colorizeButtonControl($bg-color, $bg-color-hover, $bg-color-disabled: $color__silver) {
+  background-color: $bg-color;
+
+  &:hover:not(:disabled),
+  &:focus {
+    background: $bg-color-hover;
+  }
+
+  &:disabled {
+    background: $bg-color-disabled;
+  }
+}
+
+@mixin setAbsoluteTopRightPosition($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}

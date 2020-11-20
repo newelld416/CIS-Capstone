@@ -1,0 +1,58 @@
+{
+    "info": {
+        "id": 0,
+        "title": "ARIA",
+        "example": "https://stackblitz.com/edit/aria"
+    },
+    "lesson": {
+        "reading": {
+            "subTitle": "Accessibl Rich Internet Applications"
+        },
+        "example": {
+            "content": "Accessible Rich Internet Applications"
+        },
+        "quiz": {
+            "subTitle": "Quiz",
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "What does the acronym ARIA stand for ",
+                    "answer": "Accessible Rich Internet Applications",
+                    "options": [
+                        "Accessible Rich Internet Applications",
+                        "Accessible Reliant Information Applications",
+                        "Automated Reliance of Internet Accessibility",
+                        "Automated Rich Internet for Accessibility"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "question": "Which is not a key rule to remember with ARIA attributes",
+                    "answer": "HTML elements must have a limit of 3 AIRA attributes",
+                    "options": [
+                        "Use native elements where you can use them",
+                        "All interactive elements must have an accessible name",
+                        "HTML elements must have a limit of 3 AIRA attributes",
+                        "Do not change native semantics, unless you really have to"
+                        
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "Which HTML element does not need a role attirbute",
+                    "answer": "h4",
+                    "options": [
+                        "div",
+                        "label",
+                        "ul",
+                        "h4"
+                    ]
+                }
+            ]
+
+        },
+        "certificate": {
+            "courseTitle": "ARIA Attributes"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+<mat-horizontal-stepper #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Reading / Example</ng-template>
+            <div class="section-container">
+                <app-page-header text="{{title}}"></app-page-header>
+                <app-reading></app-reading>
+            </div>
+            <div>
+                <button mat-raised-button class="previous-btn" matStepperPrevious><a href="{{example}}"
+                        target="_blank">Live Example</a></button>
+                <button mat-raised-button class="next-btn-active" matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Quiz</ng-template>
+            <div class="section-container">
+                <app-page-header text="{{title}}"></app-page-header>
+                <app-quiz (trackAnswers)="someFunction($event)"></app-quiz>
+            </div>
+            <div>
+                <button mat-raised-button class="previous-btn" matStepperPrevious><a href="{{example}}"
+                        target="_blank">Live Example</a></button>
+                <button *ngIf="quizCompleted" mat-raised-button class="next-btn-active" matStepperNext
+                    (click)="completeLesson()">Next</button>
+                <button *ngIf="!quizCompleted" mat-raised-button [disabled]="true" class="next-btn-disabled"
+                    matStepperNext>Next</button>
+                <button mat-raised-button class="previous-btn" matStepperPrevious>Previous</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup">
+        <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel>Certificate</ng-template>
+            <div class="section-container">
+                <app-certificate></app-certificate>
+            </div>
+            <div>
+                <button mat-raised-button class="previous-btn" matStepperPrevious><a href="{{example}}"
+                        target="_blank">Live Example</a></button>
+                <button mat-raised-button class="next-btn-active" matStepperNext (click)="nextLesson()">Next</button>
+                <button mat-raised-button class="previous-btn" matStepperPrevious>Previous</button>
+            </div>
+        </form>
+    </mat-step>
+</mat-horizontal-stepper>

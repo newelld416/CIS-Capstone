@@ -1,0 +1,11 @@
+@import '../../../scss/base.scss';
+
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color__gvsu_light_grey;
+    color: $color__gvsu_black;
+    text-align: center;
+ }

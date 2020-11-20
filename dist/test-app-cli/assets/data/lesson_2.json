@@ -1,0 +1,61 @@
+{
+    "info": {
+        "id": 2,
+        "title": "Interactive Elements",
+        "example": "https://stackblitz.com/edit/interactive-elements"
+    },
+    "lesson": {
+        "reading": {
+            "subTitle": "This is my subTitle (Interactive Elements)",
+            "background": "Interactive Elements play a key role in accessibility and there are two major ways in which interactive elements play into accessibility standards for interactive elements. <br /><br />The first key Distinction to consider is visual standards. Provide distinct styles for interactive elements, such as links and buttons, to make them easy to identify. For example, change the appearance of links on mouse hover, keyboard focus, and touch-screen activation. Ensure that styles and naming for interactive elements are used consistently throughout the website. <br /><br />The second key factor is ensuring that all interactive elements are reachable and functional. Some users do not have the ability to use a mouse so it is extremely important that all interactions can be accomplished using the keyboard. For example, if I have an input form it should be able to tab through that form to fill out different elements. Or if you have a submission button the user should be able to submit the form using the enter key. Users who have limited ability to use a mouse can experience many difficulties and have to do some of the following to be able to successfully navigate web experiences. <ul><li>use of an ergonomic keyboard</li><li>use of keyboard commands without a mouse</li><li>voice recognition software on his computer and mobile phone</li><li>assistive touch on his mobile phone</li></ul>",
+            "standards": "No Content",
+            "resources": "No Content"
+        },
+        "example": {
+            "content": "Example content (Interactive Elements)"
+        },
+        "quiz": {
+            "subTitle": "Quiz",
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "This is my first question",
+                    "answer": "Option 1",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "question": "This is my second question",
+                    "answer": "Option 2",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "This is my second question",
+                    "answer": "Option 4",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                }
+            ]
+
+        },
+        "certificate": {
+            "id": 2,
+            "content": "Certificate content (Interactive Elements)"
+        }
+    }
+}

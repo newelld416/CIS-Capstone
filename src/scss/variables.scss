@@ -1,0 +1,104 @@
+// typography
+$font__size: 16px;
+$font__size--medium: 14px;
+$font__size--small: 12px;
+$font__fallback: sans-serif;
+$font__amway-icons: 'AmwayIcons';
+
+$font__header-size: 42px;
+$font__header-size--medium: 32px;
+$font__header-size--small: 28px;
+
+// breakpoints
+$breakpoint__sm: 320px;
+$breakpoint__sm_l: 480px;
+$breakpoint__md_s: 620px;
+$breakpoint__md: 768px;
+$breakpoint__md_l: 1080px;
+$breakpoint__lg: 1280px;
+$breakpoint__lg_l: 1440px;
+
+// dimensions
+$base__min-width: $breakpoint__sm;
+$base__max-width: $breakpoint__lg;
+$gap__sm: 8px;
+$gap__md: 16px;
+$gap__lg: 24px;
+
+// gvsu-color-scheme
+$color__gvsu_black: #000000;
+$color__gvsu_white: #ffffff;
+$color__gvsu_blue: #0065a4;
+$color__gvsu_light_blue: #96C0CE;
+$color__gvsu_dark_grey: #525564;
+$color__gvsu_light_grey: #d3d3d3;
+$color__gvsu_dark_tan: #BEB9B5;
+$color__gvsu_light_tan: #FEF6EB;
+
+$color__gvsu_correct: #90ee90;
+$color__gvsu_wrong: #ffa6a6;
+$color__gvsu_incomplete: #f8d568;
+
+// // colors
+// $color__black: #000000;
+// $color__black-smoke: rgba($color__black, .19);
+// $color__black-light: rgba($color__black, .04);
+// $color__black-blond: rgba($color__black, 0.2);
+// $color__grey84: rgba($color__black, 0.29);
+// $color__white: #ffffff;
+// $color__seashell: #f1f1f1;
+// $color__white-smoke: #f4f4f4;
+// $color__ghost-white: #f1f2ff;
+// $color__gainsboro: #dadada;
+// $color__disabled_bg: #eeeeee;
+// $color__dark_grey: #303030;
+// $color__mine_shaft: #2c2c2c;
+// $color__davy_grey: #555;
+// $color__mid_grey: #666;
+// $color__grey: #757575;
+// $color__mid_grey3: #919191;
+// $color__grey72: #b2b2b2;
+// $color__silver: #bababa;
+// $color__platinum: #e4e4e4;
+// $color__purple: #38539a;
+// $color__light-purple: #4b6fcc;
+// $color__pale-purple: #abbff4;
+// $color__mariner-blue: #37529a;
+// $color__near_salem: #268840;
+// $color__forest_green: #20893d;
+// $color__red: #e71d3b;
+// $color__amaranth: #e21d4a;
+// $color__amaranth_light: rgba($color__amaranth, 0.4);
+// $color__near-electric: #db0b00;
+// $color__near-electric-light: rgba($color__near-electric, 0.4);
+// $color__crimson: #ed174a;
+// $color__burgundy: #e0b4b4;
+// $color__burgundy-light: #f8e0e0;
+// $color__blue: #a9d5de;
+// $color__blue-light: #b5e7fa;
+// $color__green: #a3c293;
+// $color__green-light: #cffbdb;
+// $color__yellow: #c9ba9b;
+// $color__yellow-light: #faeca6;
+// $color__alabaster: #fafafa;
+
+// $font__color__blue: #0a3055;
+
+// common elements
+$footer__height: 52px;
+$footer__height--md: 72px;
+
+$header__height: 64px;
+$header-navigation__height: 81px;
+
+$page-separator__border: thin solid $color__gvsu_light_grey;
+
+$modal-width-default: 600px;
+$modal-height-default: 100%;
+$modal-mobile-width: 300px;
+
+$video-player-default-width: 90%;
+$video-player-default-height: 50%;
+$video-player-mobile-default-width: 90%;
+$video-player-mobile-default-height: 50%;
+$video-player-top-position-mobile: 40%;

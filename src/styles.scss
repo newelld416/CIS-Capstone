@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './scss/base';
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    align-content: center;
+    margin: auto;
+    background: $color__gvsu_white;
+}

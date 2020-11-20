@@ -1,0 +1,57 @@
+{
+    "info": {
+        "id": 6,
+        "title": "Spacing",
+        "example": "https://stackblitz.com/edit/spacing"
+    },
+    "lesson": {
+        "reading": {
+            "subTitle": "This is my subTitle (Spacing)"
+        },
+        "example": {
+            "content": "Example content (Spacing)"
+        },
+        "quiz": {
+            "subTitle": "Quiz",
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "This is my first question",
+                    "answer": "Option 1",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "question": "This is my second question",
+                    "answer": "Option 2",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "This is my second question",
+                    "answer": "Option 4",
+                    "options": [
+                        "Option 1",
+                        "Option 2",
+                        "Option 3",
+                        "Option 4"
+                    ]
+                }
+            ]
+
+        },
+        "certificate": {
+            "courseTitle": "Spacing"
+        }
+    }
+}

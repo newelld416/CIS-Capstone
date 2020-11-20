@@ -1,0 +1,39 @@
+{
+    "resources": [
+        {
+            "title": "W3C and WAI",
+            "link": "https://www.w3.org/WAI/resources/",
+            "description": "Strategies, standards, resources to make the Web accessible to people with disabilities."
+        },
+        {
+            "title": "WAI Design",
+            "link": "https://www.w3.org/WAI/tips/designing/",
+            "description": "Design tips for creating accessible web applications."
+        },
+        {
+            "title": "WAI Dev",
+            "link": "https://www.w3.org/WAI/tips/developing/",
+            "description": "Development tips for creating accessible web applications."
+        },
+        {
+            "title": "Contrast Checker",
+            "link": "https://contrastchecker.com/",
+            "description": "Quickly check the contrast bewteen two different colors."
+        },
+        {
+            "title": "WCAG Standards",
+            "link": "https://www.w3.org/WAI/standards-guidelines/wcag/#:~:text=They%20have%2012%2D13%20guidelines,A%2C%20AA%2C%20and%20AAA.&text=To%20learn%20about%20web%20accessibility%20principles%20and%20guidelines%2C%20see%20Accessibility%20Principles.",
+            "description": "Technical standards for web accessible applications."
+        },
+        {
+            "title": "Accessibiulity Fundamentals",
+            "link": "https://www.w3.org/WAI/fundamentals/",
+            "description": "Introduction and funcamentals for web accessibility."
+        },
+        {
+            "title": "Google Standards",
+            "link": "https://developers.google.com/web/fundamentals/accessibility",
+            "description": "Google accessibility standards and resources for designing great user experineces."
+        }
+    ]
+}

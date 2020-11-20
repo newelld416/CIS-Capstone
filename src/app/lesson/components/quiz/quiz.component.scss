@@ -1,0 +1,48 @@
+@import '../../../../scss/base.scss';
+
+.question-container {
+    border: 3px solid $color__gvsu_black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 20px;
+
+    .answer {
+        //Same styling
+        margin: 10px auto 10px auto;
+        padding: 10px;
+        text-align:center;
+        border-radius: 30px;
+
+        &__incomplete{
+            background-color: $color__gvsu_incomplete;
+        }
+
+        &__wrong{
+            background-color: $color__gvsu_wrong;
+        }
+
+        &__correct{
+            background-color: $color__gvsu_correct;
+        }
+    }
+    
+
+    .example-radio-group {
+        display: flex;
+        margin: 15px 0;
+        flex-direction: column;
+        word-wrap: normal;
+    }
+    
+    .example-radio-button {
+        margin: 5px;
+        
+
+        .mat-radio-button.mat-accent .mat-radio-inner-circle {
+            background-color: rgb(66, 134, 244);
+        }
+    }
+
+}
+
+

@@ -1,0 +1,56 @@
+{
+    "info": {
+        "id": 2,
+        "title": "Color Usage",
+        "example": "https://stackblitz.com/edit/color-usage"
+    },
+    "lesson": {
+        "reading": {
+            "subTitle": "This is my subTitle (Color Usage)"
+        },
+        "example": {
+            "content": "Example content (Color Usage)"
+        },
+        "quiz": {
+            "subTitle": "Quiz",
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "What is not a common que to use in addition to color",
+                    "answer": "Feedback as Sound",
+                    "options": [
+                        "Hover State",
+                        "Text Clues",
+                        "User Alerts",
+                        "Feedback as Sound"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "question": "What are other types of Color difficienceies we need to consider",
+                    "answer": "All of the Above",
+                    "options": [
+                        "Users with partial sight often experience limited color vision",
+                        "Users who have color-blindness benefit when information conveyed by color is available in other visual ways",
+                        "People using Braille displays or other tactile interfaces can detect text cues by touch",
+                        "All of the Above"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "You should always have multiple cues to signal to a user context",
+                    "answer": "True",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ]
+
+        },
+        "certificate": {
+            "courseTitle": "Color"
+        }
+
+    }
+}
