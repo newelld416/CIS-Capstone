@@ -34,6 +34,11 @@
             "title": "Google Standards",
             "link": "https://developers.google.com/web/fundamentals/accessibility",
             "description": "Google accessibility standards and resources for designing great user experineces."
+        },
+        {
+            "title": "Aria Guides",
+            "link": "https://w3c.github.io/using-aria/",
+            "description": "Accessible rich internet applications"
         }
     ]
 }

@@ -1,62 +1,58 @@
 {
     "info": {
         "id": 0,
-        "title": "Contrast",
-        "example": "https://stackblitz.com/edit/contrast"
+        "title": "ARIA",
+        "example": "https://stackblitz.com/edit/aria"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (Contrast)",
-            "background": "Contrast is defined as the state of being strikingly different from something else in juxtaposition or close association. Which means that in order to have good contrast we need to have different colors placed close to each other when designing and developing our applications.  This is important for a wide variety of impairments such as color blindness, visual deficiencies and even screens with poor color resolution. <br /><br />The overall goal as with most accessibility examples we will talk about in this lesson is to provide a clear experience visually for your application. <br /><br />There are many types of users that benefit from an experience that follows this contrast requirement. Among them being individuals with low vision, individuals with low contrast vision or individuals with color vision deficiency.",
-            "standards": "The standard contrast ratio is 4.5:1, meaning if the background is a solid color (or all black or all white) then the relative luminance of the text can be maintained by making sure that each of the text letters have 4.5:1 contrast ratio with the background. Now let’s break down what that means. If I have an all-black (#000000) background that means the text on that background needs to be at least 4.5 times brighter. <br /><br /> Also included in this standard is Images. If the text of an image is meant to convey a message or meant to be understood as text, then it must meet the same accessibility standard of 4.5: 1. A good example of this is a company showing its logo as a jpg file in the header. The logo is meant to be subscribed as text and should therefore follow the contrast accessibility guideline of 4.5:1. An exception to this rule would be if a website had an image of a neighborhood landscape and in that landscape was the address of a house in the background. This is text on your webpage, however since it is not meant to convey a meaningful message to the user you do not have to worry about meeting accessibility guidelines. <br /><br /> As developers and designers there are things, we can do to help mitigate contrast issues. Larger text has wider character strokes and can be much easier for the user to read at a lower contrast ratio. So, in examples where colors cannot be changed for a specific reason the design can implement a view with larger text to help alleviate the concern. With larger text (18 point or larger, or 14 point or larger and bold) you could use a contrast ration of 3:1 that would be acceptable for most accessibility guidelines. As always with these guidelines there are not many had and fast rules and we as implementors can be creative about how solve problems for our users. We just have to be cognizant of all of our users when we consider how we may solve a problem.",
-            "resources": "There are many free resources online that you can use to validate this ratio but the one I prefer the most is <a style='color: red;' href='https://contrastchecker.com/'>Contrast Checker</a>. It allows you to type in two different hex colors and it will output the ratio of those colors."
+            "subTitle": "Accessibl Rich Internet Applications"
         },
         "example": {
-            "content": "Example content (Contrast)"
+            "content": "Accessible Rich Internet Applications"
         },
         "quiz": {
             "subTitle": "Quiz",
             "questions": [
                 {
                     "id": 0,
-                    "question": "What is the standard contrast ratio recomended?",
-                    "answer": "4.5:1",
+                    "question": "What does the acronym ARIA stand for ",
+                    "answer": "Accessible Rich Internet Applications",
                     "options": [
-                        "4:1",
-                        "4.5:1",
-                        "1:1",
-                        "7:1"
+                        "Accessible Rich Internet Applications",
+                        "Accessible Reliant Information Applications",
+                        "Automated Reliance of Internet Accessibility",
+                        "Automated Rich Internet for Accessibility"
                     ]
                 },
                 {
                     "id": 1,
-                    "question": "If my text has a font size of 24pt, what does my contrast ratio need to be.",
-                    "answer": "3:1",
+                    "question": "Which is not a key rule to remember with ARIA attributes",
+                    "answer": "HTML elements must have a limit of 3 AIRA attributes",
                     "options": [
-                        "4.5:1",
-                        "3.5:1",
-                        "3:1",
-                        "4:1"
+                        "Use native elements where you can use them",
+                        "All interactive elements must have an accessible name",
+                        "HTML elements must have a limit of 3 AIRA attributes",
+                        "Do not change native semantics, unless you really have to"
+                        
                     ]
                 },
                 {
                     "id": 2,
-                    "question": "This is my second question",
-                    "answer": "Option 4",
+                    "question": "Which HTML element does not need a role attirbute",
+                    "answer": "h4",
                     "options": [
-                        "<p>Test</p>",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "div",
+                        "label",
+                        "ul",
+                        "h4"
                     ]
                 }
             ]
 
         },
         "certificate": {
-            "id": 0,
-            "content": "Certificate content (Contrast)"
+            "courseTitle": "ARIA Attributes"
         }
-
     }
 }

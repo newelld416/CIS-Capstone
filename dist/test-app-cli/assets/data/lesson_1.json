@@ -1,61 +1,46 @@
 {
     "info": {
         "id": 1,
-        "title": "Color Usage",
-        "example": "https://stackblitz.com/edit/color-usage"
+        "title": "Contrast",
+        "example": "https://stackblitz.com/edit/contrast"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (Color Usage)",
-            "background": "Color usage is extremely important when it comes to accessibility. It can be used to differentiate boundaries as well as convey messages. But as with every accessible feature the goal is to ensure that all users can access whatever information is being conveyed by the color choices.<br><br>When we think about color we often think about supporting people who experience “Color Blindness” but there are many other type of individuals that need to be considered, like the following: <br><ul><li>Users with partial sight often experience limited color vision</li><li> Some older users may not be able to see color well</li><li>Users who have color-blindness benefit when information conveyed by color is available in other visual ways</li><li>People using text-only, limited color, or monochrome displays may be unable to access color-dependent information</li><li>Users who have problems distinguishing between colors can look or listen for text cues</li><li>People using Braille displays or other tactile interfaces can detect text cues by touch</li><ul>",
-            "standards": "Below I will detail out several examples and reasons for why we must think about these things as we are designing and developing our web solutions.<br><h4>Ensure information displayed by color is also displayed by text</h4>An example of this would be using required language surrounding an input with an asterisk as several other indicators instead of just outlining the input with red color to signify a required field. <h4>Using cues besides color to differentiate assets</h4>An example of this would be how we uses different cursors to signify different capabilities. ",
-            "resources": "No Content"
+            "subTitle": "This is my subTitle (Contrast)"
         },
         "example": {
-            "content": "Example content (Color Usage)"
+            "content": "Example content (Contrast)"
         },
         "quiz": {
             "subTitle": "Quiz",
             "questions": [
                 {
                     "id": 0,
-                    "question": "This is my first question",
-                    "answer": "Option 1",
+                    "question": "What is the standard contrast ratio recomended?",
+                    "answer": "4.5:1",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "4:1",
+                        "4.5:1",
+                        "1:1",
+                        "7:1"
                     ]
                 },
                 {
                     "id": 1,
-                    "question": "This is my second question",
-                    "answer": "Option 2",
+                    "question": "If my text has a font size of 24pt, what does my contrast ratio need to be.",
+                    "answer": "3:1",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
-                    ]
-                },
-                {
-                    "id": 2,
-                    "question": "This is my second question",
-                    "answer": "Option 4",
-                    "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "4.5:1",
+                        "3.5:1",
+                        "3:1",
+                        "4:1"
                     ]
                 }
             ]
 
         },
         "certificate": {
-            "id": 1,
-            "content": "Certificate content (Color Usage)"
+            "courseTitle": "Contrast"
         }
 
     }

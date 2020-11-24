@@ -85,7 +85,7 @@ export class LessonComponent implements OnInit {
   public completeLesson() {
     this.lessonsCompleted = this.browserStorage.getLocalStorage("LessonsCompleted");
     if (this.lessonsCompleted == null) {
-      this.lessonsCompleted = [false, false, false, false, false, false, false, false];
+      this.lessonsCompleted = [false, false, false, false, false, false, false];
     }
     this.lessonsCompleted[this.id] = true;
     this.browserStorage.setLocalStorage("LessonsCompleted", this.lessonsCompleted);

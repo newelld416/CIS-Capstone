@@ -1,18 +1,15 @@
 {
     "info": {
         "id": 6,
-        "title": "Image and Media",
+        "title": "Spacing",
         "example": "https://stackblitz.com/edit/spacing"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (Image and Media)",
-            "background": "No Content",
-            "standards": "No Content",
-            "resources": "No Content"
+            "subTitle": "This is my subTitle (Spacing)"
         },
         "example": {
-            "content": "Example content (Image and Media)"
+            "content": "Example content (Spacing)"
         },
         "quiz": {
             "subTitle": "Quiz",
@@ -54,8 +51,7 @@
 
         },
         "certificate": {
-            "id": 6,
-            "content": "Certificate content (Image and Media)"
+            "courseTitle": "Spacing"
         }
     }
 }

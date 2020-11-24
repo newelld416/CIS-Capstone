@@ -1,18 +1,15 @@
 {
     "info": {
         "id": 4,
-        "title": "User Feedback",
-        "example": "https://stackblitz.com/edit/user-feedback"
+        "title": "Navigation",
+        "example": "https://stackblitz.com/edit/ang-nav"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (User Feedback)",
-            "background": "No Content",
-            "standards": "No Content",
-            "resources": "No Content"
+            "subTitle": "This is my subTitle (Navigation)"
         },
         "example": {
-            "content": "Example content (User Feedback)"
+            "content": "Example content (Navigation)"
         },
         "quiz": {
             "subTitle": "Quiz",
@@ -54,8 +51,7 @@
 
         },
         "certificate": {
-            "id": 4,
-            "content": "Certificate content (User Feedback)"
+            "courseTitle": "Navigation"
         }
     }
 }

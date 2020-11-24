@@ -1,18 +1,15 @@
 {
     "info": {
         "id": 5,
-        "title": "Spacing",
-        "example": "https://stackblitz.com/edit/spacing"
+        "title": "User Feedback",
+        "example": "https://stackblitz.com/edit/user-feedback"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (Spacing)",
-            "background": "No Content",
-            "standards": "No Content",
-            "resources": "No Content"
+            "subTitle": "This is my subTitle (User Feedback)"
         },
         "example": {
-            "content": "Example content (Spacing)"
+            "content": "Example content (User Feedback)"
         },
         "quiz": {
             "subTitle": "Quiz",
@@ -54,8 +51,7 @@
 
         },
         "certificate": {
-            "id": 5,
-            "content": "Certificate content (Spacing)"
+            "courseTitle": "User Feedback"
         }
     }
 }

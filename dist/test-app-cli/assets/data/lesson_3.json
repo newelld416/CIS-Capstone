@@ -1,18 +1,15 @@
 {
     "info": {
         "id": 3,
-        "title": "Navigation",
-        "example": "https://stackblitz.com/edit/ang-nav"
+        "title": "Interactive Elements",
+        "example": "https://stackblitz.com/edit/interactive-elements"
     },
     "lesson": {
         "reading": {
-            "subTitle": "This is my subTitle (Navigation)",
-            "background": "No Content",
-            "standards": "No Content",
-            "resources": "No Content"
+            "subTitle": "This is my subTitle (Interactive Elements)"
         },
         "example": {
-            "content": "Example content (Navigation)"
+            "content": "Example content (Interactive Elements)"
         },
         "quiz": {
             "subTitle": "Quiz",
@@ -54,8 +51,7 @@
 
         },
         "certificate": {
-            "id": 3,
-            "content": "Certificate content (Navigation)"
+            "courseTitle": "Interactive Elements"
         }
     }
 }
