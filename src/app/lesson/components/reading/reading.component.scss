@@ -12,6 +12,19 @@
     height: 100px;
 }
 
+.user-feedback-image {
+    width: 45%;
+    height: auto;
+
+    &__left {
+        float: left;
+    }
+
+    &right {
+        float: right;
+    }
+}
+
 .correct {
     color: green;
 }
