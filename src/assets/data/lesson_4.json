@@ -16,13 +16,12 @@
             "questions": [
                 {
                     "id": 0,
-                    "question": "This is my first question",
+                    "question": "What are the two key elements the lesson described in navigation",
                     "answer": "Option 1",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "Structure and Simplicity",
+                        "Styling and Simplicity",
+                        "Structure and Styling"
                     ]
                 },
                 {

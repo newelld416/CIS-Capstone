@@ -16,35 +16,35 @@
             "questions": [
                 {
                     "id": 0,
-                    "question": "This is my first question",
-                    "answer": "Option 1",
+                    "question": "What element do we need to pair with with every input elements",
+                    "answer": "Label",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "Label",
+                        "Button",
+                        "Header",
+                        "Checkbox"
                     ]
                 },
                 {
                     "id": 1,
-                    "question": "This is my second question",
-                    "answer": "Option 2",
+                    "question": "What key-stroke acts a mouse click for focused elements",
+                    "answer": "Space and Enter",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "Tab",
+                        "Enter",
+                        "Space",
+                        "Space and Enter"
                     ]
                 },
                 {
                     "id": 2,
-                    "question": "This is my second question",
+                    "question": "What are the two CSS pseudo classes the lesson discussed ",
                     "answer": "Option 4",
                     "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
+                        "Hover and Active",
+                        "Hover and Focus",
+                        "Focus and Active",
+                        "Some other pseudo classes"
                     ]
                 }
             ]

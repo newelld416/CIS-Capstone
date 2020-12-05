@@ -1,0 +1,36 @@
+@import "../../scss/base.scss";
+
+.content {
+    background: $color__gvsu_white;
+    color: $color__gvsu_black;
+    height: 600px;
+    overflow:auto;
+    background: $color__gvsu_white;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+
+    .w3-content {
+        background-color: $color__gvsu_light_grey;
+        border: 1px solid #999;
+        border-left: 5px solid $color__gvsu_blue;
+        display: block;
+        padding: 5px 20px 5px 20px;
+        overflow: auto;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    height: 50px;
+    color: $color__gvsu_white;
+    background-color: $color__gvsu_blue;
+}
