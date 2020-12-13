@@ -1,4 +1,4 @@
-<div class="pyro">
+<div *ngIf="questions.length > 0" class="pyro">
     <div class="before"></div>
     <div class="certificate-container">
         <div clas="certificate">
@@ -8,4 +8,7 @@
         </div>
     </div>
     <div class="after"></div>
+</div>
+<div *ngIf="questions.length <= 0">
+    <app-under-construction></app-under-construction>
 </div>

@@ -11,6 +11,9 @@ import { LessonService } from '../../../shared/services/lesson.service';
 export class CertificateComponent implements OnInit {
 
   courseTitle: string;
+  quiz: any;
+  questions: any;
+  id: number;
 
   constructor(private route: ActivatedRoute, private lessonService: LessonService) { }
 
@@ -18,6 +21,9 @@ export class CertificateComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.lessonService.getLessonData(params.id).subscribe(data => {
         this.courseTitle = data.lesson.certificate.courseTitle;
+        this.id = data.info.id;
+        this.quiz = data.lesson.quiz;
+        this.questions = this.quiz.questions;
       });
     });
   }

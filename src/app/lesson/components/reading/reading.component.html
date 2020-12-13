@@ -11,15 +11,14 @@
             </p>
             <p>
                 To highlight an example of what aria elements can do for you application we have chosen to show the HTML
-                markup for a progress bar. As you can see the element we have chosen is just a div element. By itself it
-                is not able to tell a screen reader what the purpose of the element is and i most certainly can not tell
-                any specific details about the element. So we have added our attribute on the element. The first element
-                we have added is the <strong>role</strong> attribute. This atribute is used to define the overal purpose
-                of the element. the next element is <strong>aria-valuenow</strong> and is used to show the current
-                progress of the loading bar. The third and fourt key attributes are <strong>aria-valuemin</strong> and
-                <strong>aria-valuemax</strong> and they are used to show the min and max values of the progress bar
-                respectively. All of these elements are key examples of how we as developers can add key infomation to
-                elements to help with accessibility needs.
+                markup for a progress bar. As you can see the element, we have chosen is just a div element. By itself
+                it is not able to tell a screen reader what the purpose of the element is, and I most certainly cannot
+                tell any specific details about the element. So, we have added our attribute on the element. The first
+                element we have added is the role attribute. This attribute is used to define the overall purpose of the
+                element. the next element is aria-valuenow and is used to show the current progress of the loading bar.
+                The third and fourth key attributes are aria-valuemin and aria-valuemax and they are used to show the
+                min and max values of the progress bar respectively. All of these elements are key examples of how we as
+                developers can add key information to elements to help with accessibility needs.
             </p>
 
 
@@ -28,15 +27,14 @@
             <pre><div class="correct">Correct</div>&#x3C;div id=&#x22;percent-loaded&#x22; role=&#x22;progressbar&#x22; aria-valuenow=&#x22;75&#x22; aria-valuemin=&#x22;0&#x22; aria-valuemax=&#x22;100&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
 
             <p>
-                For a more complete and live example please click on the "Live Example" button in the bottom left of
-                your
-                screen.
+                For a completer and more live example please click on the "Live Example" button in the bottom left of
+                your screen.
             </p>
         </div>
         <div class="reading-container__standards">
             <h3>Standards</h3>
             <p>
-                There are five key rules to keep in mind when it come to aria attributes.
+                There are five key rules to keep in mind when it comes to aria attributes.
             </p>
             <ol>
                 <li>Use native elements where you can use them</li>
@@ -47,7 +45,7 @@
             </ol>
             <h4>Use native elements where you can use them</h4>
             <p>
-                Essentially this rule is saying that if at all possible you should use native HTML elements when
+                Essentially this rule is saying that if at all possible, you should use native HTML elements when
                 possible. Meaning that it is always possible to style a div element to whatever you want however if you
                 want it to be a button you should be using the native HTML button element instead of making something
                 else look like a button. This will save you lots of time as well as make your code more readable and
@@ -55,7 +53,7 @@
             </p>
             <h4>Do not change native semantics, unless you really have to</h4>
             <p>
-                This means when we have native elements like header elements we should leave those elements alone. Those
+                This means when we have native elements like header elements, we should leave those elements alone. Those
                 elements often have default roles that are read by screen readers. If you must add a unique role to a
                 native element like that you should add it in a wrapping tag like the example below.
             </p>
@@ -63,7 +61,7 @@
             <pre><div class="correct">Correct</div>&#x3C;div role=tab&#x3E;&#x3C;h2&#x3E;heading tab&#x3C;/h2&#x3E;&#x3C;/div&#x3E;</pre>
             <h4>All interactive ARIA controls must be usable with the keyboard</h4>
             <p>
-                Efectively this rule states that if you give an HTML element a specifc role it should act like that
+                Effectively this rule states that if you give an HTML element a specific role it should act like that
                 role. For example, if using role=button the element must be able to receive focus and a user must be
                 able to activate the action associated with the element using both the enter (on WIN OS) or return (MAC
                 OS) and the space key.
@@ -73,14 +71,14 @@
                 A general rule of thumb for showing and hiding elements is arai labels that describe that are not
                 needed.
                 When we dynamically show and hide elements the elements are added automatically. So explicitly defining
-                them in the markup is not necesary.
+                them in the markup is not necessary.
             </p>
             <h4>All interactive elements must have an accessible name</h4>
             <p>
                 There are certain elements we need to link through html attributes. The most common example of this is
-                input forms. When we have an input element we often acompany that input box with a label. Now there are
-                several ways that we can do that but as long as they are created as separate elements we need to link
-                them. Below you can see two examples that are both syntatically correct however as you can see in the
+                input forms. When we have an input element, we often accompany  that input box with a label. Now there are
+                several ways that we can do that but as long as they are created as separate elements, we need to link
+                them. Below you can see two examples that are both syntactically correct however as you can see in the
                 second example the two HTML elements are linked.
             </p>
             <pre><div class="incorrect">Incorrect</div>&#x3C;label&#x3E;user name&#x3C;/label&#x3E; &#x3C;input type=&#x22;text&#x22;&#x3E;</pre>
@@ -170,8 +168,8 @@
                 all users can access whatever information is being conveyed by the color choices.
             </p>
             <p>
-                When we think about color we often think about supporting people who experience “Color Blindness” but
-                there are many other type of individuals that need to be considered, like the following:
+                When we think about color, we often think about supporting people who experience “Color Blindness” but
+                there are many other types of individuals that need to be considered, like the following:
             </p>
             <ul>
                 <li>Users with partial sight often experience limited color vision</li>
@@ -189,10 +187,9 @@
             <p>
                 Below I will detail out several examples and reasons for why we must think about these things as we are
                 designing and developing our web solutions. For a more complete exampe please refere to the "Live
-                Example"
-                button in the lower left hand portion of your screen.
+                Example" button in the lower left hand portion of your screen.
             </p>
-            <h5>Ensure information displayed by color is also displayed by text</h5>
+            <h4>Ensure information displayed by color is also displayed by text</h4>
             <p>
                 An example of this would be using required language surrounding an input with an asterisk as several
                 other indicators instead of just outlining the input with red color to signify a required field.
@@ -209,7 +206,7 @@
                 <input type="text" id="username" name="username" required>
             </form>
 
-            <h5>Using cues besides color to differentiate assets</h5>
+            <h4>Using cues besides color to differentiate assets</h4>
             <p>
                 An example of this would be how we uses different cursors to signify different capabilities. In the
                 example below you can see that all of the buttons look the exact same color wise, with the exception of
@@ -406,7 +403,8 @@
         </div>
     </div>
     <div *ngIf="id == 6">
-        <div class="reading-container__background">
+        <app-under-construction></app-under-construction>
+        <!-- <div class="reading-container__background">
             <h3>Background</h3>
             <p>
                 Background Content
@@ -417,6 +415,6 @@
             <p>
                 Standards Content
             </p>
-        </div>
+        </div> -->
     </div>
 </div>

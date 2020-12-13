@@ -43,6 +43,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { DotsLoaderComponent } from './components/dots-loader/dots-loader.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 
 //Services
 import { LessonService } from './services/lesson.service';
@@ -51,8 +52,6 @@ import { LessonService } from './services/lesson.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserStorageService } from './services/browser-storage.service';
 import { RedirectService } from './services/redirect.service';
-
-
 
 const SERVICES = [
     LessonService,
@@ -65,7 +64,8 @@ const COMPONENTS = [
     ButtonComponent,
     InputComponent,
     DotsLoaderComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    UnderConstructionComponent
 ];
 
 const MATERIAL_MODULES = [
