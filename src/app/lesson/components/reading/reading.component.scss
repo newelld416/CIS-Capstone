@@ -13,8 +13,12 @@
 }
 
 .user-feedback-image {
-    width: 45%;
+    width: 30%;
     height: auto;
+
+    &__alerts {
+        width: 70%;
+    }
 
     &__left {
         float: left;

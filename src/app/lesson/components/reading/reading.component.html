@@ -53,7 +53,8 @@
             </p>
             <h4>Do not change native semantics, unless you really have to</h4>
             <p>
-                This means when we have native elements like header elements, we should leave those elements alone. Those
+                This means when we have native elements like header elements, we should leave those elements alone.
+                Those
                 elements often have default roles that are read by screen readers. If you must add a unique role to a
                 native element like that you should add it in a wrapping tag like the example below.
             </p>
@@ -76,7 +77,8 @@
             <h4>All interactive elements must have an accessible name</h4>
             <p>
                 There are certain elements we need to link through html attributes. The most common example of this is
-                input forms. When we have an input element, we often accompany  that input box with a label. Now there are
+                input forms. When we have an input element, we often accompany that input box with a label. Now there
+                are
                 several ways that we can do that but as long as they are created as separate elements, we need to link
                 them. Below you can see two examples that are both syntactically correct however as you can see in the
                 second example the two HTML elements are linked.
@@ -400,6 +402,44 @@
             </p>
             <img class="user-feedback-image user-feedback-image__left" src="assets/user-feedback-form-1.png">
             <img class="user-feedback-image user-feedback-image__right" src="assets/user-feedback-form-2.png">
+            <p>
+                This is a very simple form that allows you to submit a first and last name. However if you look closely
+                at the form you can tell that there are three different forms of user feedback.
+            </p>
+            <ul>
+                <li>The error message that is displayed below the input field</li>
+                <li>The outline of the input box</li>
+                <li>The Image on the right side of the input</li>
+            </ul>
+            <p>
+                Additionally a very helpful capability when it comes to user feedback is the use of the focus
+                capability. It is important that when we alert a user that there is an error that needs correcting that
+                we automatically focus them on that error. It can be dificult for users with visual imparements to
+                understand where an error occured even when they are notified that there was an error. In this ecxample
+                we will want to make sure that we focus the users context on the first element that caused the error.
+                For this form if I typed nothing in I would recieve two errors, one on the first name input and one on
+                the last name input. However the focus should be on the first name input because logically that is the
+                first element to cause an error.
+            </p>
+            <p>
+                The second example that we will cover is alert messaging. Alert messaging is helpful when you do not
+                have an html element to tie your feedback to. It can be an independent piece of feedback that can be
+                helpful to the user not only to show errors, but also to inform various actions have taken place. For
+                example when you add an item to a cart, you may want to display an alert message showing the user that
+                an item was in fact successfully added to the cart. Below you can see an image that contains various
+                alerts that convey different types of information.
+            </p>
+            <img class="user-feedback-image user-feedback-image__alerts" src="assets/alerts.png">
+            <p>
+                These alerts show information in the same mannor but use color to differentiate the type of information
+                being displayed.
+            </p>
+            <ul>
+                <li><span style="color: red;">Red</span> - Displays a critical error or negative action</li>
+                <li><span style="color: green;">Green</span> - Displays a successful action was taken</li>
+                <li><span style="color: blue;">Blue</span> - Displays an informative message not necessarily tied to an action</li>
+                <li><span style="color: orange;">Orange</span> - Displays a warning of some negative action</li>
+            </ul>
         </div>
     </div>
     <div *ngIf="id == 6">
