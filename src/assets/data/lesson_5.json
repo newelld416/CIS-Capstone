@@ -13,7 +13,39 @@
         },
         "quiz": {
             "subTitle": "Quiz",
-            "questions": []
+            "questions": [
+                {
+                    "id": 0,
+                    "question": "What color is not typically used to display a type of information",
+                    "answer": "Purple",
+                    "options": [
+                        "Orange",
+                        "Green",
+                        "Purple",
+                        "Red"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "What color is used to display a critical error to the user",
+                    "answer": "Red",
+                    "options": [
+                        "Orange",
+                        "Green",
+                        "Purple",
+                        "Red"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": "Alerts should disappear quickly as to not disrupt the user experience",
+                    "answer": "False",
+                    "options": [
+                        "True",
+                        "False"
+                    ]
+                }
+            ]
 
         },
         "certificate": {
