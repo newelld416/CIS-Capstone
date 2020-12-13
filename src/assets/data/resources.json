@@ -40,5 +40,11 @@
             "link": "https://w3c.github.io/using-aria/",
             "description": "Accessible rich internet applications"
         }
+        ,
+        {
+            "title": "WAVE",
+            "link": "https://wave.webaim.org/report",
+            "description": "Web Accessibility Evaluation Tool"
+        }
     ]
 }

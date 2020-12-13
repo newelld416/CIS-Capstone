@@ -1,7 +1,14 @@
 @import "../../scss/base.scss";
 
-.content { 
-    padding: 16px;
+.content {
+    background: $color__gvsu_light_blue;
+    color: $color__gvsu_black;
+    height: 600px;
+    overflow:auto;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
 
     .card-container {
         float: left;

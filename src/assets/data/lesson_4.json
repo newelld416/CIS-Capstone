@@ -23,28 +23,6 @@
                         "Styling and Simplicity",
                         "Structure and Styling"
                     ]
-                },
-                {
-                    "id": 1,
-                    "question": "This is my second question",
-                    "answer": "Option 2",
-                    "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
-                    ]
-                },
-                {
-                    "id": 2,
-                    "question": "This is my second question",
-                    "answer": "Option 4",
-                    "options": [
-                        "Option 1",
-                        "Option 2",
-                        "Option 3",
-                        "Option 4"
-                    ]
                 }
             ]
 
