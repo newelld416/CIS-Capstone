@@ -39,7 +39,7 @@
                 {
                     "id": 2,
                     "question": "What are the two CSS pseudo classes the lesson discussed ",
-                    "answer": "Option 4",
+                    "answer": "Hover and Active",
                     "options": [
                         "Hover and Active",
                         "Hover and Focus",
